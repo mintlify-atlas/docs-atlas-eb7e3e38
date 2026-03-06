@@ -1,0 +1,140 @@
+{
+  "projectType": "saas",
+  "projectName": "VoicePact",
+  "projectDescription": "Voice powered contract automation platform using AI and Africa's Talking APIs to transform spoken agreements into cryptographically-secured digital contracts with automated billing and escrow payments.",
+  "theme": "almond",
+  "primaryColor": "#10278d",
+  "lightColor": "#8494c4",
+  "darkColor": "#cbd1e6",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/voice-contracts",
+              "features/multi-modal-verification",
+              "features/escrow-payments",
+              "features/cryptographic-signatures"
+            ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/creating-contracts",
+              "guides/voice-recording",
+              "guides/payment-flows",
+              "guides/sms-ussd-integration",
+              "guides/analytics-etl"
+            ]
+          },
+          {
+            "group": "Platform",
+            "pages": [
+              "platform/architecture",
+              "platform/security",
+              "platform/integrations"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "api/introduction",
+              "api/authentication",
+              "api/errors"
+            ]
+          },
+          {
+            "group": "Contracts",
+            "pages": [
+              "api/contracts/create",
+              "api/contracts/get",
+              "api/contracts/list",
+              "api/contracts/update",
+              "api/contracts/confirm",
+              "api/contracts/status"
+            ]
+          },
+          {
+            "group": "Voice",
+            "pages": [
+              "api/voice/conference",
+              "api/voice/process",
+              "api/voice/upload",
+              "api/voice/webhook"
+            ]
+          },
+          {
+            "group": "Payments",
+            "pages": [
+              "api/payments/checkout",
+              "api/payments/get",
+              "api/payments/webhook",
+              "api/payments/list"
+            ]
+          },
+          {
+            "group": "Messaging",
+            "pages": [
+              "api/sms/webhook",
+              "api/ussd/webhook"
+            ]
+          },
+          {
+            "group": "WebSocket",
+            "pages": [
+              "api/websocket/contracts"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Voice-to-contract conversion using Whisper AI",
+    "Multi-modal verification via SMS, USSD, and voice",
+    "Automated mobile money escrow with conditional release",
+    "Cryptographic Ed25519 signatures for contract integrity",
+    "Real-time WebSocket status streaming",
+    "Feature phone and smartphone support",
+    "Analytics ETL pipeline for business intelligence",
+    "Africa's Talking integration for voice, SMS, and payments"
+  ],
+  "publicApiSurface": [
+    "POST /api/v1/contracts/create",
+    "POST /api/v1/contracts/create/manual",
+    "GET /api/v1/contracts/{contract_id}",
+    "GET /api/v1/contracts/",
+    "PUT /api/v1/contracts/{contract_id}",
+    "POST /api/v1/contracts/{contract_id}/confirm",
+    "GET /api/v1/contracts/{contract_id}/status",
+    "POST /api/v1/voice/conference/create",
+    "POST /api/v1/voice/process",
+    "POST /api/v1/voice/upload",
+    "POST /api/v1/voice/webhook",
+    "GET /api/v1/voice/recordings/{recording_id}",
+    "POST /api/v1/payments/checkout",
+    "GET /api/v1/payments/{payment_id}",
+    "GET /api/v1/payments/contract/{contract_id}",
+    "POST /api/v1/payments/webhook",
+    "GET /api/v1/payments/wallet/balance",
+    "POST /api/v1/sms/webhook",
+    "POST /api/v1/ussd/webhook",
+    "WebSocket /api/v1/ws/contracts/{contract_id}"
+  ]
+}
